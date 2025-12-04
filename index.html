@@ -1,245 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Journey to Wellness</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f8fb;
-      color: #1e2a37;
-    }
-
-    /* Header */
-    header {
-      background: #ffffff;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #e6ecf1;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    header h1 {
+      line-height: 1.6;
       margin: 0;
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #2b4c7e;
+      padding: 0;
+      background-color: #f8f8f8;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #1e3a5f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #16324f;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
     }
 
     nav a {
-      margin-left: 25px;
+      color: white;
       text-decoration: none;
-      font-weight: 600;
-      color: #2b4c7e;
-      transition: 0.3s;
+      font-weight: bold;
     }
+
     nav a:hover {
-      color: #1b2f4e;
+      text-decoration: underline;
     }
 
-    /* Hero section */
-    .hero {
-      padding: 90px 40px;
-      text-align: center;
-      background: linear-gradient(to right, #dce9f8, #eef4ff);
-    }
-    .hero h2 {
-      font-size: 2.8rem;
-      margin-bottom: 15px;
-      color: #1d3b63;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: auto;
-      color: #324a64;
-    }
-
-    /* Section layout */
-    section {
-      padding: 60px 40px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-    }
-    .card {
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
       background: white;
-      padding: 25px;
-      border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      transition: 0.3s;
-    }
-    .card:hover {
-      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-      transform: translateY(-3px);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    .card h3 {
-      margin-top: 0;
-      color: #2b4c7e;
-      font-size: 1.3rem;
+    h2 {
+      color: #16324f;
+      border-left: 5px solid #16324f;
+      padding-left: 10px;
     }
 
-    /* Footer */
+    ul {
+      padding-left: 20px;
+    }
+
     footer {
-      background: #ffffff;
-      padding: 40px;
       text-align: center;
-      border-top: 1px solid #e6ecf1;
-      margin-top: 60px;
+      padding: 20px;
+      margin-top: 30px;
+      background-color: #1e3a5f;
+      color: white;
     }
-    footer p {
-      margin: 0;
-      color: #7a8aa0;
+
+    img.logo {
+      display: block;
+      margin: 30px auto 10px auto;
+      max-width: 200px;
     }
   </style>
 </head>
+
 <body>
+
+  <!-- HEADER LOGO -->
+  <img class="logo" src="https://www.edmonds.edu/sites/default/files/content-files/marketing-communications/images/brand/primary-logo.png" alt="Edmonds College Logo">
 
   <header>
     <h1>Journey to Wellness</h1>
-    <nav>
-      <a href="#help">Find Help</a>
-      <a href="#crisis">Crisis Support</a>
-      <a href="#selfcare">Self-Care</a>
-      <a href="#campus">Campus Resources</a>
-    </nav>
+    <p>Your quick guide to mental health resources at Edmonds College</p>
   </header>
 
-  <div class="hero">
-    <h2>Your Mental Health Matters</h2>
-    <p>A calm, supportive place to find guidance, resources, and tools to support your emotional well-being.</p>
+  <nav>
+    <a href="#help">Find Help Nearby</a>
+    <a href="#crisis">Crisis Support</a>
+    <a href="#selfcare">Self-Care Tips</a>
+    <a href="#campus">Campus Resources</a>
+    <a href="#visit">Plan Your Next Visit</a>
+  </nav>
+
+  <div class="container" id="help">
+    <h2>Find Help Nearby</h2>
+    <p>These are real places around the area that students can use if they need support fast.</p>
+
+    <ul>
+      <li><strong>TherapyDen:</strong> Search for therapists based on what you need  
+        <br><a href="https://www.therapyden.com" target="_blank">https://www.therapyden.com</a></li>
+
+      <li><strong>Psychology Today:</strong> Good for finding local counselors  
+        <br><a href="https://www.psychologytoday.com/us/therapists" target="_blank">Find a Therapist</a></li>
+
+      <li><strong>Washington 211:</strong> Local housing, food, health, and support connections  
+        <br><a href="https://wa211.org" target="_blank">WA 211</a></li>
+    </ul>
   </div>
 
-  <section id="help">
-    <h2>Find Help Nearby</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>Counseling & Resource Center</h3>
-        <p>Free, confidential mental health support for students through phone, video, or in person.</p>
-
-        <!-- CLICKABLE PHONE + EMAIL -->
-        <p><strong>Phone:</strong> 
-          <a href="tel:4256401358">425-640-1358</a>
-        </p>
-
-        <p><strong>Email:</strong> 
-          <a href="mailto:counseling@edmonds.edu">counseling@edmonds.edu</a>
-        </p>
-
-        <!-- CAMPUS LOCATION -->
-        <p><strong>Location:</strong> Mountlake Terrace Hall (MLT) 138</p>
-
-        <!-- OFFICIAL LINK -->
-        <p><a href="https://www.edmonds.edu/student-services/crc/" target="_blank">Visit CRC Website</a></p>
-      </div>
-
-      <div class="card">
-        <h3>Local Mental Health Providers</h3>
-        <p>Find therapists and support services in your area with sliding-scale and low-cost options.</p>
-
-        <!-- REAL LINK -->
-        <p><a href="https://www.psychologytoday.com/us/therapists/wa/edmonds" target="_blank">Find Providers Near Edmonds</a></p>
-      </div>
-
-      <div class="card">
-        <h3>Assessment Tools</h3>
-        <p>Reflect on your emotional well-being with validated mental-health screenings.</p>
-
-        <!-- REAL LINK -->
-        <p><a href="https://screening.mhanational.org/" target="_blank">Take a Mental Health Screening</a></p>
-      </div>
-    </div>
-  </section>
-
-  <section id="crisis">
+  <div class="container" id="crisis">
     <h2>Crisis Support</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>988 Suicide & Crisis Lifeline</h3>
-        <p>Call or text <strong><a href="tel:988">988</a></strong> if you or someone you know is in immediate distress.</p>
-      </div>
+    <p>If someone is in danger or not feeling safe, these hotlines are active 24/7.</p>
 
-      <div class="card">
-        <h3>Crisis Chat & Text</h3>
-        <p><a href="https://988lifeline.org/chat/" target="_blank">Click to Open Live Crisis Chat</a></p>
-        <p><strong>Text:</strong> <a href="sms:988">988</a></p>
-      </div>
+    <ul>
+      <li><strong>National Suicide & Crisis Lifeline:</strong> dial <strong>988</strong></li>
+      <li><strong>Crisis Text Line:</strong> Text <strong>HOME</strong> to <strong>741741</strong></li>
+      <li><strong>SAMHSA Helpline:</strong> 1-800-662-HELP  
+        <br><a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank">SAMHSA Website</a></li>
+      <li><strong>NAMI HelpLine:</strong> 1-800-950-NAMI</li>
+    </ul>
+  </div>
 
-      <div class="card">
-        <h3>Emergency Resources</h3>
-        <p><a href="https://snohomishcountywa.gov/509/Crisis-Services" target="_blank">Snohomish County Crisis Services</a></p>
-      </div>
-    </div>
-  </section>
-
-  <section id="selfcare">
+  <div class="container" id="selfcare">
     <h2>Self-Care Tips</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>Daily Habits</h3>
-        <p>Simple routines to help regulate mood, reduce stress, and support emotional balance.</p>
-      </div>
+    <p>Simple stuff that actually helps if you're overwhelmed:</p>
+    <ul>
+      <li>Take short walks</li>
+      <li>Drink water (for real, it helps more than people think)</li>
+      <li>Keep your sleep schedule somewhat normal</li>
+      <li>Talk to someone you trust</li>
+      <li>Take breaks when your brain is overloaded</li>
+    </ul>
+  </div>
 
-      <div class="card">
-        <h3>Mindfulness</h3>
-        <p>Breathing exercises and grounding techniques for stressful moments.</p>
-
-        <!-- REAL LINK -->
-        <p><a href="https://www.youtube.com/watch?v=inpok4MKVLM" target="_blank">5-Minute Guided Breathing</a></p>
-      </div>
-
-      <div class="card">
-        <h3>Healthy Boundaries</h3>
-        <p>How to protect your energy and communicate needs effectively.</p>
-
-        <!-- REAL LINK -->
-        <p><a href="https://positivepsychology.com/setting-boundaries/" target="_blank">Learn About Boundaries</a></p>
-      </div>
-    </div>
-  </section>
-
-  <section id="campus">
+  <div class="container" id="campus">
     <h2>Campus Resources</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>Student Services</h3>
-        <p>Learn about tutoring, financial aid support, and wellness programs at Edmonds College.</p>
-        <p><a href="https://www.edmonds.edu/student-services/" target="_blank">Visit Student Services</a></p>
-      </div>
+    <p>Edmonds College has support on campus you can use anytime.</p>
 
-      <div class="card">
-        <h3>Plan Your Visit</h3>
-        <p>Find office hours, locations, and direct links to schedule appointments.</p>
-        <p><a href="https://www.edmonds.edu/about-edmonds/maps-and-directions.html" target="_blank">Campus Map & Directions</a></p>
-      </div>
-    </div>
-  </section>
+    <ul>
+      <li><strong>Counseling & Resource Center (CRC):</strong> free mental health support  
+        <br>425-640-1358  
+        <br>counseling@edmonds.edu  
+        <br><a href="https://www.edmonds.edu/student-services/counseling-and-resource-center.html" target="_blank">
+          CRC Website  
+        </a></li>
+
+      <li><strong>TRIO:</strong> extra support for first-gen & low-income students  
+        <br><a href="https://www.edmonds.edu/student-services/trio/" target="_blank">TRIO</a></li>
+
+      <li><strong>Wellness Center:</strong> health & fitness resources  
+        <br><a href="https://www.edmonds.edu/student-life/wellness-center/" target="_blank">Visit Site</a></li>
+    </ul>
+  </div>
+
+  <div class="container" id="visit">
+    <h2>Plan Your Next Visit</h2>
+    <p>Whether you need counseling or want to check out campus services, these links help you schedule or get more info:</p>
+
+    <ul>
+      <li><a href="https://www.edmonds.edu/student-services/" target="_blank">Student Services</a></li>
+      <li><a href="https://www.edmonds.edu/student-services/crc/" target="_blank">CRC Scheduling</a></li>
+      <li><a href="https://www.edmonds.edu/student-life/" target="_blank">Campus Life</a></li>
+    </ul>
+  </div>
 
   <footer>
-    <p>© 2025 Journey to Wellness — Edmonds College</p>
+    &copy; 2024 Edmonds College — Journey to Wellness Project
   </footer>
-
-  <section id="resources">
-    <h2>Mental Health Resources</h2>
-    <ul>
-      <li><a href="https://988lifeline.org/" target="_blank">988 Suicide & Crisis Lifeline</a></li>
-      <li><a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank">SAMHSA National Helpline</a></li>
-      <li><a href="https://www.crisistextline.org/" target="_blank">Crisis Text Line (Text HOME to 741741)</a></li>
-      <li><a href="https://www.nami.org/Home" target="_blank">NAMI</a></li>
-      <li><a href="https://www.mhanational.org/" target="_blank">Mental Health America</a></li>
-    </ul>
-  </section>
 
 </body>
 </html>
